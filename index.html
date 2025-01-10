@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filipino Recipe Sharing</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="tb.jpg" alt="Logo" style="width: 45px; height: 45px;" class="rounded-pill">
+                Tribu Babaylan
+            </a>
+
+            <!-- Navbar Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categories">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#submit">Submit Recipe</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="text-center py-5">
+        <div class="container">
+            <h1>Recipes from Tribu Babaylan!</h1>
+            <p>Discover and share the best Filipino dishes with the world!</p>
+            <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="adobo.jpg" class="d-block w-100" alt="Adobo">
+                        <div class="carousel-caption">
+                            <h5>Chicken Adobo</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="sinigang.jpg" class="d-block w-100" alt="Sinigang">
+                        <div class="carousel-caption">
+                            <h5>Sinigang</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="halo-halo.jpg" class="d-block w-100" alt="Halo-Halo">
+                        <div class="carousel-caption">
+                            <h5>Halo-Halo</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#recipeCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#recipeCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+<section id="categories" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Recipe Categories</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="lumpia.jpg" class="card-img-top category-img" alt="Lumpia">
+                    <div class="card-body">
+                        <h5 class="card-title">Lumpia</h5>
+                        <p class="card-text">This is a traditional Filipino recipe for lumpia, or fried spring rolls.</p>
+                        <a href="recipe_lumpia.html" class="btn btn-primary">View Recipes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="pancit.jpg" class="card-img-top category-img" alt="Pancit">
+                    <div class="card-body">
+                        <h5 class="card-title">Pancit</h5>
+                        <p class="card-text">Pancit always features rice noodles and vegetables (and often meat, such as pork or chicken).</p>
+                        <a href="recipe_pancit.html" class="btn btn-primary">View Recipes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="bb.jpg" class="card-img-top category-img" alt="Bacon Bagnet">
+                    <div class="card-body">
+                        <h5 class="card-title">Bacon Bagnet</h5>
+                        <p class="card-text">A Filipino dish consisting of pork belly (liempo) boiled and deep-fried until crispy.</p>
+                        <a href="recipe_bagnet.html" class="btn btn-primary">View Recipes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="lechon.jpg" class="card-img-top category-img" alt="Lechon">
+                    <div class="card-body">
+                        <h5 class="card-title">Lechon Belly</h5>
+                        <p class="card-text">Pork Belly Lechon Roll is slow-roasted in the oven for super crispy skin and moist meat.</p>
+                        <a href="recipe_lechon.html" class="btn btn-primary">View Recipes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="sisig.jpg" class="card-img-top category-img" alt="Sisig">
+                    <div class="card-body">
+                        <h5 class="card-title">Sisig</h5>
+                        <p class="card-text">A sizzling dish made from chopped pig's head and liver, seasoned with calamansi and chili.</p>
+                        <a href="recipe_sisig.html" class="btn btn-primary">View Recipes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="kare-kare.jpg" class="card-img-top category-img" alt="Kare-Kare">
+                    <div class="card-body">
+                        <h5 class="card-title">Kare-Kare</h5>
+                        <p class="card-text">A rich peanut stew with oxtail, tripe, and vegetables.</p>
+                        <a href="recipe_karekare.html" class="btn btn-primary">View Recipes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="dinuguan.jpg" class="card-img-top category-img" alt="Dinuguan">
+                    <div class="card-body">
+                        <h5 class="card-title">Dinuguan</h5>
+                        <p class="card-text">A savory stew made from pork and pig's blood, often served with puto.</p>
+                        <a href="recipe_dinuguan.html" class="btn btn-primary">View Recipes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="caldereta.jpg" class="card-img-top category-img" alt="Caldereta">
+                    <div class="card-body">
+                        <h5 class="card-title">Beef Caldereta</h5>
+                        <p class="card-text">A hearty beef stew with tomato sauce, potatoes, and vegetables.</p>
+                        <a href="recipe_caldereta.html" class="btn btn-primary">View Recipes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="bicol_express.jpg" class="card-img-top category-img" alt="Bicol Express">
+                    <div class="card-body">
+                        <h5 class="card-title">Bicol Express</h5>
+                        <p class="card-text">A spicy Filipino stew made with pork, coconut milk, and chilies.</p>
+                        <a href="recipe_bicol_express.html" class="btn btn-primary">View Recipes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="turon.jpg" class="card-img-top category-img" alt="Turon">
+                    <div class="card-body">
+                        <h5 class="card-title">Turon</h5>
+                        <p class="card-text">A popular snack made of banana slices wrapped in spring roll wrappers and fried to perfection.</p>
+                        <a href="recipe_turon.html" class="btn btn-primary">View Recipes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="ginataan.jpg" class="card-img-top category-img" alt="Ginataan">
+                    <div class="card-body">
+                        <h5 class="card-title">Ginataan</h5>
+                        <p class="card-text">A creamy dessert made with coconut milk, sticky rice balls, and a mix of root crops.</p>
+                        <a href="recipe_ginataan.html" class="btn btn-primary">View Recipes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="balut.jpg" class="card-img-top category-img" alt="Balut">
+                    <div class="card-body">
+                        <h5 class="card-title">Balut</h5>
+                        <p class="card-text">A famous Filipino street food: a fertilized duck egg with a partially developed embryo inside.</p>
+                        <a href="recipe_balut.html" class="btn btn-primary">View Recipes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <!-- Submission Form Section -->
+    <section id="submit" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Submit Your Recipe</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="recipeName" class="form-label">Recipe Name</label>
+                    <input type="text" class="form-control" id="recipeName" placeholder="Enter recipe name">
+                </div>
+                <div class="mb-3">
+                    <label for="ingredients" class="form-label">Ingredients</label>
+                    <textarea class="form-control" id="ingredients" rows="3" placeholder="List the ingredients"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="instructions" class="form-label">Instructions</label>
+                    <textarea class="form-control" id="instructions" rows="4" placeholder="Write the steps"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Recipe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
